@@ -123,6 +123,7 @@ print(new)
 '''
 
 '''
+#Valid Sudoku
 board =[["8","3",".",".","7",".",".",".","."]
 ,["6",".",".","1","9","5",".",".","."]
 ,[".","9","8",".",".",".",".","6","."]
@@ -147,8 +148,8 @@ for i in range(9):
                 print('true')
 print(seen)
 '''
-'''
 
+'''
 SEARCH 2D MATRIX
 
 from pickle import FALSE, TRUE
@@ -495,20 +496,10 @@ node = SinglyLinkedListNode(data)
     return node
         '''
 
-
+'''
 #Permutation of a string to check pallindrome
 
 
-from cmath import inf, infj
-from collections import defaultdict
-import enum
-from itertools import count
-from multiprocessing.sharedctypes import Value
-from pickle import APPEND
-from tarfile import LENGTH_NAME
-from turtle import distance
-
-'''
 s='meayl'
 t = defaultdict(int)
 for i in s:
@@ -553,10 +544,8 @@ for i,num in enumerate(nums):
     d[num]=i
 
 '''
+
 '''
-
-
-
 nums = [4,1,3,3]
 l=[nums[i] - i for i in range(len(nums))]
 print(l)
@@ -816,7 +805,8 @@ for i in range(numRows):
             res[i].append(res[i-1][j-1] + res[i-1][j])
 print (res)        
 '''
-#Set Matrix Zeroes
+
+#Set Matrix Zeroes(leetcode-73)
 mat= [[0,1,2,0],[3,4,5,2],[1,3,1,5]]
 rows=len(mat)
 cols=len(mat[0])
