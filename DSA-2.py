@@ -826,10 +826,12 @@ for r in range(1,rows):
         if mat[0][c] == 0 or mat[r][0]==0:
             mat[r][c] = 0
 for r in range(rows):
-    for c in range(cols):
-        if mat[0][0]==0:
-            mat[0][c]=1
-        elif rowZero==True:
+	if rowZero==True:
             mat[r][0]=0
+for c in range(cols):
+	if mat[0][0]==0:
+            mat[0][c]=0
+        
+        
 print(mat)
 
